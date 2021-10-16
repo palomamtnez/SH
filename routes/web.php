@@ -15,13 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => 'auth'], function(){
 
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', function () { return view('dashboard'); })->name('dashboard');
+    Route::get('/', function () { return view('dashboard'); })->name('home');
 
-    Route::get('/', function () {
-        return view('dashboard');
-    })->name('home');
+    Route::get('/challenges', function () { return view('challenges'); })->name('challenges');
+
 });
 
 require __DIR__.'/auth.php';
