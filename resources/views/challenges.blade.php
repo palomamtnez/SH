@@ -12,7 +12,7 @@
                     <p class="mb-4">
                         Aliquam erat volutpat. Donec non accumsan dolor. Vestibulum rutrum posuere aliquet. Ut consectetur feugiat aliquam. Aenean eleifend molestie tortor, ut hendrerit libero tincidunt a. Sed faucibus tellus consequat orci auctor congue. Suspendisse elementum orci sit amet posuere condimentum. Sed non lorem et purus tempor maximus non eu sem.
                     </p>
-                    <x-button>Shift challenge</x-button>
+                    <button class="button primary">Shift challenge</button>
                 </div>
             </div>
         </div>

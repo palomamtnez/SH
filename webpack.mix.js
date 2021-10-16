@@ -15,9 +15,14 @@ let tailwindcss = require("tailwindcss");
 mix.js('resources/js/app.js', 'public/js')
     .vue()
     .sass('resources/sass/app.scss', 'public/css')
-    // .postCss('resources/css/app.css', 'public/css', [
-    //     require('postcss-import'),
-    //     require('tailwindcss'), // import tailwind config
-    //     require('autoprefixer'),
+    .options({
+        processCssUrls: false,
+        postCss: [
+            require("autoprefixer"), // auto prefix
+            tailwindcss("tailwind.config.js"), // import tailwind config
+        ],
+        clearConsole: true,
+        publicPath: "public"
+    })
 // ]);
 ;
