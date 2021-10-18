@@ -1,0 +1,130 @@
+.challenge-shift {
+
+    &__wrapper {
+
+        @screen md {
+            @apply flex items-start justify-between;
+
+            .copy-wrap {
+                @apply ml-8;
+            }
+        }
+
+        @screen xl {
+            .copy-wrap {
+                @apply ml-14;
+            }
+        }
+
+
+        .section-enter-steps {
+
+            h3 {
+                @apply  text-offBlack;
+            }
+            .tag {
+                @apply uppercase font-proxBold text-greyBlue;
+            }
+
+            p {
+                @apply  text-offBlack;
+            }
+            span.today{
+
+                @apply text-lg font-proxBold text-offBlack;
+            }
+
+            .enter-steps {
+
+                .help-text {
+                    @apply text-sm  text-offBlack;
+                }
+                label {
+
+                    @apply mb-4  text-offBlack;
+
+                    span {
+                        @apply py-3 px-2 rounded-r-sm border-l-0 border border-davysGrey border-solid ;
+
+                    }
+
+                    input {
+                        @apply py-3 px-2 rounded-l-sm border border-davysGrey border-solid w-40;
+                        outline: none;
+                    }
+
+                    input:focus {
+                        //@apply border-greyBlue;
+                    }
+                }
+            }
+        }
+
+        .section-left-panel .gray-block {
+            @apply bg-culturedWhiteOff shadow sm:rounded-md mb-4 xl:mb-9;
+
+            &.results {
+
+                ol {
+                    counter-reset: my-awesome-counter;
+
+                    li {
+
+                        @apply font-proxReg text-greyBlue cursor-pointer py-4 px-5;
+                        counter-increment: my-awesome-counter;
+
+                        &:hover {
+                            @apply opacity-80 font-proxBold
+                        }
+
+                        &:nth-child(odd) {
+                            @apply bg-culturedWhite;
+                        }
+
+                        &.active {
+                            @apply bg-culturedBlue text-cgBlue font-proxBold;
+                        }
+
+                        span {
+                            @apply inline-block my-auto ;
+
+                            &.ol-number {
+                                &:before {
+                                    @apply pr-2 font-proxBold;
+                                    content: counter(my-awesome-counter) ". ";
+                                }
+                            }
+
+                            &:last-child {
+                                @apply ml-auto
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            &.about-challenge {
+                @apply text-greyBlue;
+            }
+
+            .big {
+                span {
+                    @apply leading-none block uppercase font-proxBold text-greyBlue;
+                }
+
+                .points {
+                    @apply text-cgBlue;
+                    font-size: calc(1.1 * theme('fontSize.base-heading-size'));
+                    @screen lg {
+                        font-size: calc(1.6 * theme('fontSize.base-heading-size'));
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}

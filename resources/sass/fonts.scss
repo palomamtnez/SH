@@ -1,0 +1,29 @@
+// Fonts
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  font-style: normal;
+ font-weight: 700;
+ font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: url('../webfonts/ProximaNovaSemibold/font.woff2') format('woff2'),
+  url('../webfonts/ProximaNovaSemibold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ProximaNova-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: url('../webfonts/ProximaNovaRegular/font.woff2') format('woff2'),
+  url('../webfonts/ProximaNovaRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "ProximaNova-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: url('../webfonts/ProximaNovaBold/font.woff2') format('woff2'),
+   url('../webfonts/ProximaNovaBold/font.woff') format('woff');
+}

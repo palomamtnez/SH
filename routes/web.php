@@ -18,7 +18,8 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/dashboard', function () { return view('dashboard'); })->name('dashboard');
     Route::get('/', function () { return view('dashboard'); })->name('home');
 
-    Route::get('/challenges', function () { return view('challenges'); })->name('challenges');
+    Route::get('/challenges', function () { return view('challenges/index'); })->name('challenges');
+    Route::get('/challenges/shift-challenge', function () { return view('challenges/shift-challenge'); })->name('challenges.shit-challenge');
 
 });
 
