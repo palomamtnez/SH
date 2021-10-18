@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Challenges\ShiftChallenge;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,7 @@ Route::group(['middleware' => 'auth'], function(){
 
     Route::get('/challenges', function () { return view('challenges/index'); })->name('challenges');
     Route::get('/challenges/shift-challenge', function () { return view('challenges/shift-challenge'); })->name('challenges.shit-challenge');
+    Route::post('/challenges/shift-challenge/save-steps', [ShiftChallenge::class, 'saveSteps']);
 
 });
 

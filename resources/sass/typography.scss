@@ -68,42 +68,6 @@ main {
             }
         }
 
-        &.secondary {
-            @apply inline-flex text-base rounded-sm text-honoluluBlue text-center relative font-proxBold uppercase;
-
-            span {
-                @apply relative;
-
-                &:before {
-                    content: "";
-                    @apply absolute bottom-0 w-full h-0.5 bg-honoluluBlue;
-                }
-            }
-
-            &:hover,
-            &:active,
-            &:focus {
-                @apply text-cgBlueDark;
-
-                span {
-                    @apply relative;
-
-                    &:before {
-                        content: "";
-                        @apply absolute bottom-0 w-full h-0.5 bg-cgBlueDark;
-                    }
-                }
-            }
-        }
-
-
-        &[disabled=disabled],
-        &:disabled {
-            opacity: 0.3;
-            cursor: default;
-        }
-
-
         &:focus {
             outline: none;
         }

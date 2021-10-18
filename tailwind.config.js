@@ -29,6 +29,7 @@ module.exports = {
                 culturedWhite: '#EFF0F2ff',
                 culturedBlue: '#e6f3fb',
                 offBlack: '#303136',
+                offGray: '#e3e4e6',
 
                 success: '#00c97a',
                 error: '#ea0000',

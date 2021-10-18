@@ -7,6 +7,7 @@ if (appVue) {
 
 // Register Vue Components
     Vue.component('shift-challenge', require('../components/Shift-challenge.vue').default);
+    Vue.component('loading', require('../components/Loading.vue').default);
 
 // Initialize Vue
     const app = new Vue({

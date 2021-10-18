@@ -26,9 +26,6 @@
                 @apply uppercase font-proxBold text-greyBlue;
             }
 
-            p {
-                @apply  text-offBlack;
-            }
             span.today{
 
                 @apply text-lg font-proxBold text-offBlack;
@@ -44,12 +41,13 @@
                     @apply mb-4  text-offBlack;
 
                     span {
-                        @apply py-3 px-2 rounded-r-sm border-l-0 border border-davysGrey border-solid ;
-
+                        @apply md:py-3 px-2 rounded-r-sm border-l-0 border border-davysGrey border-solid ;
+                        display: inline-flex;
+                        align-items: center;
                     }
 
                     input {
-                        @apply py-3 px-2 rounded-l-sm border border-davysGrey border-solid w-40;
+                        @apply md:py-3 px-2 rounded-l-sm border border-davysGrey border-solid w-36 md:w-40;
                         outline: none;
                     }
 
@@ -106,6 +104,10 @@
 
             &.about-challenge {
                 @apply text-greyBlue;
+            }
+
+            .ring-img {
+                @apply rounded-full shadow-sm bg-offGray border-solid border-4 border-white align-middle inline-flex;
             }
 
             .big {

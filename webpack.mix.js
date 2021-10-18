@@ -25,5 +25,4 @@ mix.js('resources/js/app.js', 'public/js')
         clearConsole: true,
         publicPath: "public"
     })
-// ]);
 ;
